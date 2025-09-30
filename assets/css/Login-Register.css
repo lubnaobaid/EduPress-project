@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+}
+
+.box-login-register{
+    padding: 56px 70px 70px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .login{
+        width: 609px;
+        height: 406px;
+        gap: 30px;
+        border-radius: 20px;
+        border-width: 1px;
+        padding: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+
+        h2{
+            padding-bottom: 30px;
+            font-size: 32px;
+        }
+        .email-or-username{
+            margin-bottom: 20px;
+            width: 549px;
+            height: 48px;
+            padding-left: 16px;
+            border-radius: 8px;
+            border-width: 1px;
+            border: 1px solid #9D9D9D;
+            gap: 10px;
+        }
+        .password{
+        width: 549px;
+        height: 48px;
+        padding-left: 16px;
+        border-radius: 8px;
+        border-width: 1px;
+        border: 1px solid #9D9D9D;
+        gap: 10px;
+        }
+
+        .remember-me{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            .checkbox{
+                height: 12px;
+            }
+            p{
+                font-family: Jost;
+                font-weight: 400;
+                color: #555555;
+            }
+        }
+
+        .button-login{
+            width: 549px;
+            height: 48px;
+            gap: 10px;
+            border-radius: 24px;
+            padding: 10px 24px;
+            background-color: #FF782D;
+            border-style: none;
+            color: #FFFFFF;
+            font-family: Jost;
+            font-weight: 500;
+            font-size: 18px;
+
+        }
+        .lost-your-password{
+            font-family: Jost;
+            font-weight: 400;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+    }
+
+    .register{
+        width: 585px;
+        height: 448px;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        gap: 30px;
+        h2{
+            padding-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .your-email{
+            width: 525px;
+            height: 48px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #9D9D9D;         
+            gap: 10px;
+        }
+
+        .username{
+            width: 525px;
+            height: 48px;
+            margin: 20px 0;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #9D9D9D;         
+            gap: 10px;
+        }
+
+        .your-password{
+            width: 525px;
+            height: 48px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #9D9D9D;         
+            gap: 10px;
+        }
+
+        .confirm-password{
+            width: 525px;
+            height: 48px;
+            padding: 10px 16px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #9D9D9D;         
+            gap: 10px;
+        }
+
+        .button-register{
+            width: 525px;
+            height: 48px;
+            padding: 10px 24px;
+            border-radius: 24px;
+            border-style: none;
+            background-color: #FF782D;
+            color: #FFFFFF;
+            font-family: Jost;
+            font-weight: 500;
+            font-size: 18px;
+            gap: 10px;
+            
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    header{
+        nav{
+            padding: 30px 20px 30px 20px;
+            .nav-links{
+                display: none;
+            }
+
+            .login-register{
+                display: none;
+            }
+
+            .bars{
+                display: block;
+            }
+        }
+    }
+
+    .box-login-register{
+        padding: 56px 20px 70px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        .login{
+            width: 350px;
+            .email-or-username{
+                width: 290px;
+            }
+            .password{
+                width: 290px;
+            }
+            .button-login{
+                width: 290px;
+            }
+        }
+
+        .register{
+            width: 350px;
+            .your-email{
+                width: 290px;
+            }
+            .username{
+                width: 290px;
+            }
+            .your-password{
+                width: 290px;
+            }
+            .confirm-password{
+                width: 290px;
+            }
+            .button-register{
+                width: 290px;
+            }
+        }
+    
+    }
+}
